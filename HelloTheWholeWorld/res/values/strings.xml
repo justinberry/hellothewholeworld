@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">HelloTheWholeWorld</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="status_hint">The world needs to know..</string>
+    <string name="announce_button">Announce</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="yammer">Yammer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_twitter_settings">Twitter Settings</string>
+    <string name="enter_pin">Enter OAuth PIN</string>
+    <string name="submit">Submit</string>
+
+</resources>

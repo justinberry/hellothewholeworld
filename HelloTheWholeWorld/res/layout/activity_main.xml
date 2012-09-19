@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/globeBGImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="142dp"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/statusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="@string/status_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/announceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/statusField"
+        android:layout_marginTop="40dp"
+        android:text="@string/announce_button"
+        android:onClick="onAnnounceClick"
+        />
+
+    <CheckBox
+        android:id="@+id/twitterCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/twitter"
+        android:textColor="@color/serviceLabelColour"
+        android:textStyle="bold" 
+        android:onClick="onForwarderCheckboxClick" />
+
+    <CheckBox
+        android:id="@+id/yammerCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/statusField"
+        android:layout_alignLeft="@+id/twitterCheckbox"
+        android:layout_marginBottom="48dp"
+        android:text="@string/yammer"
+        android:textColor="@color/serviceLabelColour"
+        android:textStyle="bold" 
+        android:onClick="onForwarderCheckboxClick" />
+
+    <CheckBox
+        android:id="@+id/facebookCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/twitterCheckbox"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/facebook"
+        android:textColor="@color/serviceLabelColour"
+        android:textStyle="bold" 
+        android:onClick="onForwarderCheckboxClick" />
+
+</RelativeLayout>
